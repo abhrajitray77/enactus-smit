@@ -19,6 +19,7 @@ const Header = () => {
           <li>Who we are</li>
           <li>What we do</li>
           <li>Our Teams</li>
+          <li>Updates</li>
         </ul>
       </div>
     </header>
