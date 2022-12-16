@@ -5,7 +5,7 @@ import logo from "../../public/imgs/enactus.png"
 const Header = () => {
   return (
     <header className=" bg-slate-600">
-      <div className="flex items-center py-2">
+      <div className="flex items-center py-6">
         <Image
           className="cursor-pointer object-contain"
           src={logo}
