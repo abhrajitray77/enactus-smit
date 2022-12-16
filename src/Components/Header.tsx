@@ -4,8 +4,7 @@ import logo from "../../public/imgs/enactus.png"
 
 const Header = () => {
   return (
-    <header className=" bg-slate-300/30 z-10 outline outline-slate-200 outline-2
-    rounded-b-2xl backdrop-blur-sm shadow-slate-100 shadow-[inset_0_4px_12px]  ">
+    <header className=" bg-slate-300/30 z-10">
       <div className="flex items-center py-4 space-x-2 md:px-4 lg:px-6 md:space-x-10">
         <Image
           className="cursor-pointer object-contain"
