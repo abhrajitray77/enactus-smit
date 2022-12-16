@@ -9,8 +9,8 @@ const Header = () => {
         <Image
           className="cursor-pointer object-contain"
           src={logo}
-          height={100}
-          width={100}
+          height={50}
+          width={50}
           alt="enactus_logo"
         />
 
