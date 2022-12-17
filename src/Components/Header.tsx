@@ -4,8 +4,8 @@ import logo from "../../public/imgs/enactus.png"
 
 const Header = () => {
   return (
-    <header className=" bg-slate-300/30 z-10 backdrop-blur-sm">
-      <div className="flex items-center py-4 space-x-2 md:px-4 lg:px-6 md:space-x-10">
+    <header className="relative flex flex-row py-4 bg-slate-300/30 z-10 backdrop-blur-sm">
+      <div className="flex items-center space-x-2 md:px-4 lg:px-6 md:space-x-10">
         <Image
           className="cursor-pointer object-contain"
           src={logo}
@@ -21,6 +21,12 @@ const Header = () => {
           <li>Our Teams</li>
           <li>Updates</li>
         </ul>
+      </div>
+      <div className="hidden md:inline md:absolute md:py-4 md:px-4 md:inset-y-0 md:right-0
+      ">
+        <button className=" bg-yellow-400 rounded-md p-3 text-sm font-medium text-slate-800
+        hover:text-black hover:shadow-[0_1px_4px_4px] hover:shadow-yellow-300 hover:transition hover:duration-[.8s]">
+          Donate Now</button>
       </div>
     </header>
   );
