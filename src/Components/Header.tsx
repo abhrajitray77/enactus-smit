@@ -1,8 +1,16 @@
 import Image from "next/image";
-import React from "react";
-import logo from "../../public/imgs/enactus.png"
+import React, { useState } from "react";
+import { Bars3Icon } from '@heroicons/react/24/solid';
+import logo from "../../public/imgs/enactus.png";
 
 const Header = () => {
+
+  const [isOpen, setIsOpen] = useState(false);
+  
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <header className="relative flex flex-row py-4 bg-slate-300/30 z-10 backdrop-blur-sm">
       <div className="flex items-center space-x-2 md:px-4 lg:px-6 md:space-x-10">
@@ -14,7 +22,7 @@ const Header = () => {
           alt="enactus_logo"
         />
 
-        <ul className="flex md:px-2 lg:px-6 space-x-10 text-slate-100 font-medium 
+        <ul className="hidden md:flex md:px-2 lg:px-6 space-x-10 text-slate-100 font-medium 
         cursor-pointer lg:space-x-20">
           <li>Who we are</li>
           <li>What we do</li>
@@ -28,6 +36,10 @@ const Header = () => {
         hover:text-black hover:shadow-[0_1px_4px_4px] hover:shadow-yellow-300 hover:transition hover:duration-[.8s]">
           Donate Now</button>
       </div>
+      <div className="inline absolute py-6 px-4 inset-y-0 right-0 text-sm font-medium md:hidden">
+        <Bars3Icon className="h-6 w-6  fill-yellow-400" />
+      </div>
+        
     </header>
   );
 };
