@@ -63,7 +63,8 @@ const Header = () => {
       {/*nav button*/}
 
       <div className="inline absolute py-6 px-4￼ inset-y-0 right-0 text-sm font-medium md:hidden">
-        <Bars3Icon className="h-6 w-6 mr-3 fill-yellow-300" onClick={toggleMenu} />
+        <Bars3Icon className={`h-6 w-6 mr-3 fill-yellow-300 transition-transform duration-[.6] ${isOpen ? "rotate-90": "rotate-0"}`} 
+        onClick={toggleMenu} />
       </div>
 
 
