@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Banner from "../Components/Banner";
 import Header from "../Components/Header";
+import teams from "./teams";
 
 const Home: NextPage = () => {
   return (
@@ -12,7 +13,6 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="absolute h-screen w-screen">
-        <Header />
         <Banner />
       </div>
     </div>
