@@ -12,6 +12,7 @@ const Header = () => {
   const [displayMenu, setDisplayMenu] = useState(false);
   const router = useRouter();
 
+
   
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -36,13 +37,13 @@ const Header = () => {
           alt="enactus_logo"
         />
 
-        <div className="hidden md:flex md:px-2 lg:px-6 space-x-10 text-slate-100 font-medium 
+        <ul className="hidden md:flex md:px-2 lg:px-6 space-x-10 text-slate-100 font-medium 
          lg:space-x-20">
-          <Link href="/who">Who we are</Link>
-          <Link href="/whatWe">What we do</Link>
-          <Link href="/teams">Our Teams</Link>
-          <Link href="/updates">Updates</Link>
-        </div>
+          <li><Link href="/who">Who we are</Link></li>
+          <li><Link href="/whatWe">What we do</Link></li>
+          <li><Link href="/teams">Our Teams</Link></li>
+          <li><Link href="/updates">Updates</Link></li>
+        </ul>
       </div>
       <div className="hidden md:inline md:absolute md:py-4 md:px-4 md:inset-y-0 md:right-0
       ">
