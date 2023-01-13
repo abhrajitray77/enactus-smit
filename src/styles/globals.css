@@ -2,3 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@layer base {
+
+    html{
+        @apply scroll-smooth;
+    }
+
+    body {
+        overflow-x: hidden;
+    @apply !scrollbar-thin !scrollbar-track-transparent !scrollbar-thumb-amber-500 !scrollbar-thumb-rounded-lg bg-black;
+    
+    }
+}
+
