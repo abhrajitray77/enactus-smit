@@ -16,8 +16,8 @@ export const Card: React.FC<CardProps> = ({ title, description, image, link }) =
       <p className="text-black text-base">
         {description}
       </p>
-    <div className="absolute bottom-4">
-      <a href={link} className="bg-black hover:bg-slate-900 text-white font-bold py-2 px-4 rounded-full">
+    <div className="absolute bottom-4 ">
+      <a href={link} className="bg-black hover:bg-slate-900 text-white font-bold py-2 px-6 rounded-full">
         Learn More
       </a>
     </div>

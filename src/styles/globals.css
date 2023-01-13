@@ -3,7 +3,11 @@
 @tailwind utilities;
 
 
-body{
-    overflow-x: hidden;
+@layer base {
+    body {
+        overflow-x: hidden;
+    @apply !scrollbar-thin !scrollbar-track-transparent !scrollbar-thumb-amber-500 bg-black;
+    
+    }
 }
 
