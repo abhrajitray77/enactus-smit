@@ -5,15 +5,16 @@ import bgimg from "../../public/imgs/we are enactus.png";
 
 const Banner = () => {
   return (
-    <div className="absolute -z-10 top-0 left-0 h-screen">
-      <Image
+    <div className="flex bg-gradient-to-r from-black via-slate-400 to-black w-full justify-center">
+    <div className=" h-100% ">
+      <Image className=""
         src={bgimg}
-        width={1920}
-        height={1080}
-     //   style={{ objectFit: "cover", width: "100%", height: "100%" }}
+        width={900}
+        height={500}
         alt="bg"
       />
     </div>
+  </div>
   );
 };
 

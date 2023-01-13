@@ -26,7 +26,7 @@ const Header = () => {
   };
 
   return (
-    <header className="relative flex flex-row py-4 bg-slate-800/75 z-10 backdrop-blur-sm w-screen">
+    <header className="relative flex flex-row py-4 bg-slate-800 z-10 backdrop-blur-sm w-auto">
       <div className="flex items-center md:px-4 lg:px-6 md:space-x-10">
         <Image
           onClick={()=> router.push('/')}
