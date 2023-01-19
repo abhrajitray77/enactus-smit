@@ -4,6 +4,8 @@ import Banner from "../Components/Banner";
 import { CardsSlide } from "../Components/CardsSlide";
 import Header from "../Components/Header";
 import teams from "./teams";
+import bird from "../../public/imgs/enactus_bird.png"
+import Image from "next/image";
 
 const Home: NextPage = () => {
   return (
@@ -16,7 +18,7 @@ const Home: NextPage = () => {
 
       <Banner />
       <section className="relative flex bg-gradient-to-r from-yellow-400">
-        <div className="flex flex-col ml-8 mt-6 mb-10 lg:flex lg:flex-col lg:ml-20 w-[80%] md:w-[65%] lg:w-[50%] lg:mt-16 lg:mb-24">
+        <div className="flex flex-col ml-8 mt-6 mb-10 lg:flex lg:flex-col lg:ml-20 w-[80%] md:w-[65%] lg:w-[50%] lg:mt-16 lg:mb-24 z-10">
           <h1 className="whitespace-nowrap text-[3rem] md:text-[3.5rem] lg:text-[5.2rem] font-semibold text-gray-900 bg-gradient-to-bl from-purple-500 via-slate-800 to-slate-900
           bg-clip-text text-transparent">Who We Are</h1>
           <p className="text-justify md:text-[1.2rem] lg:text-[1.5rem] text-gray-900 font-medium indent-20 mt-8 leading-relaxed">
@@ -30,6 +32,13 @@ const Home: NextPage = () => {
             <span className="lg:text-[1.6rem] font-semibold"> अन्न-Drishti</span>. Backed by a strong core team and supportive local businesses,
             we aim to make our surroundings more sustainable than ever.
           </p>
+        </div>
+        <div className="absolute right-0 mt-20 w-[300px] md:mt-20 md:w-[400px] opacity-40 md:opacity-75 lg:opacity-90 lg:w-[700px] -z-0">
+          <Image
+            src = {bird}
+
+            alt = "bird"
+          />
         </div>
       </section>
 
