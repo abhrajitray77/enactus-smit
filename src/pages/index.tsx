@@ -1,9 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Banner from "../Components/Banner";
-import { CardsSlide } from "../Components/CardsSlide";
-import Header from "../Components/Header";
-import teams from "./teams";
 import bird from "../../public/imgs/enactus_bird.png"
 import Image from "next/image";
 import aryan from "../../public/imgs/Aryan.png";
