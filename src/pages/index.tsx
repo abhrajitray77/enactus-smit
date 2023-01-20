@@ -6,6 +6,13 @@ import Header from "../Components/Header";
 import teams from "./teams";
 import bird from "../../public/imgs/enactus_bird.png"
 import Image from "next/image";
+import aryan from "../../public/imgs/Aryan.png";
+import kunal from "../../public/imgs/Kunal.png";
+import ahana from "../../public/imgs/Ahana.png";
+import yash from "../../public/imgs/Yash.png";
+import aditya from "../../public/imgs/Aditya.png";
+import namrata from "../../public/imgs/Namrata.png";
+
 
 const Home: NextPage = () => {
   return (
@@ -18,7 +25,7 @@ const Home: NextPage = () => {
 
       <Banner />
       <section className="relative flex bg-gradient-to-r from-yellow-400">
-        <div className="flex flex-col ml-8 mt-6 mb-10 lg:flex lg:flex-col lg:ml-20 w-[80%] md:w-[65%] lg:w-[50%] lg:mt-16 lg:mb-24 z-10">
+        <article className="flex flex-col ml-8 mt-6 mb-10 lg:flex lg:flex-col lg:ml-20 w-[80%] md:w-[65%] lg:w-[50%] lg:mt-16 lg:mb-24 z-10">
           <h1 className="whitespace-nowrap text-[3rem] md:text-[3.5rem] lg:text-[5.2rem] font-semibold text-gray-900 bg-gradient-to-bl from-purple-500 via-slate-800 to-slate-900
           bg-clip-text text-transparent">Who We Are</h1>
           <p className="text-justify md:text-[1.2rem] lg:text-[1.5rem] text-gray-900 font-medium indent-20 mt-8 leading-relaxed">
@@ -32,14 +39,68 @@ const Home: NextPage = () => {
             <span className="lg:text-[1.6rem] font-semibold"> अन्न-Drishti</span>. Backed by a strong core team and supportive local businesses,
             we aim to make our surroundings more sustainable than ever.
           </p>
-        </div>
-        <div className="absolute right-0 mt-20 w-[300px] md:mt-20 md:w-[400px] opacity-40 md:opacity-75 lg:opacity-90 lg:w-[700px] -z-0">
+        </article>
+        <div className="absolute right-0 mt-20 w-[300px] md:mt-20 md:w-[400px] opacity-40 md:opacity-75 lg:opacity-90 lg:w-[700px] -z-0 lg:z-10">
           <Image
             src = {bird}
 
             alt = "bird"
           />
         </div>
+      </section>
+
+      {/*Our Teams*/}
+
+      <section className="relative flex flex-col w-full bg-gradient-to-b from-blue-300 via-slate-900 to-cyan-700 space-y-20 pb-20">
+      <h1 className="flex justify-center whitespace-nowrap text-[3rem] md:text-[3.5rem] lg:text-[5.2rem] font-semibold text-gray-900 
+      bg-gradient-to-r from-purple-900 via-stone-900  to-black mt-16 drop-shadow-md shadow-black
+          bg-clip-text text-transparent">Our Teams</h1>
+        <div className="relative place-items-center grid grid-cols-2 space-x-4 overflow-x-hidden mx-4 pb-12">
+          <Image className="card-img"
+          src={aryan}
+          width = {450}
+          height = {500}
+          alt="pres"
+          />
+          <Image className="card-img"
+            src={kunal}
+            width = {450}
+            height = {500}
+            alt="kunal"
+          />
+        </div>
+        <section className="relative grid grid-cols-3 place-items-center space-x-3 mx-4">
+          <div className="">
+          <Image className="card-img"
+          src={ahana}
+          width = {350}
+          height = {500}
+          alt="Ahana"
+          />
+          </div>
+          <div className="space-y-7">
+          <Image className="card-img"
+          src={yash}
+          width = {350}
+          height = {500}
+          alt="yash"
+          />
+          <Image className="card-img"
+          src={aditya}
+          width = {350}
+          height = {500}
+          alt="aditya"
+          />
+          </div>
+          <div>
+          <Image className="card-img"
+          src={namrata}
+          width = {350}
+          height = {500}
+          alt="namrata"
+          />
+          </div>
+        </section>
       </section>
 
     </div>
