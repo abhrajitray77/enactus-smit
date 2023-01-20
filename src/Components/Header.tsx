@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import { Bars3Icon } from '@heroicons/react/24/solid';
 import logo from "../../public/imgs/Enactus-SMIT-dark.png";
 import Link from "next/link";
-import teams from "../pages/teams";
 import { useRouter } from "next/router";
 
 const Header = () => {
