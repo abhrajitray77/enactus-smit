@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import { Bars3Icon } from '@heroicons/react/24/solid';
 import logo from "../../public/imgs/Enactus-SMIT-dark.png";
 import Link from "next/link";
-import teams from "../pages/teams";
 import { useRouter } from "next/router";
 
 const Header = () => {
@@ -39,10 +38,9 @@ const Header = () => {
 
         <ul className="hidden md:flex md:px-2 lg:px-6 space-x-10 text-slate-100 font-medium 
          lg:space-x-20">
-          <li><Link href="/who">Who we are</Link></li>
-          <li><Link href="/whatWe">What we do</Link></li>
-          <li><Link href="/teams">Our Teams</Link></li>
-          <li><Link href="/updates">Updates</Link></li>
+          <li><Link href="/projects">Our Projects</Link></li>
+          <li><Link href="/constitution">Constitution</Link></li>
+          <li><Link href="/contact">Contact Us</Link></li>
         </ul>
       </div>
       <div className=" hidden md:inline md:absolute md:py-4 md:px-4 md:inset-y-0 md:right-0
@@ -58,10 +56,10 @@ const Header = () => {
         <nav className={`${isOpen ? "w-[45vw]" : "w-0"} duration-[.3s] h-screen bg-slate-600/90`}>
         <ul className={`absolute right-0 mr-6 mt-[25vw] space-y-10 text-slate-100 font-medium
         md:hidden ${displayMenu ? "inline-block" : "hidden"}`} onClick={toggleMenu}>
-          <li><Link href="/who">Who we are</Link></li>
-          <li><Link href="/whatWe">What we do</Link></li>
-          <li><Link href="/teams">Our Teams</Link></li>
-          <li><Link href="/updates">Updates</Link></li>
+
+          <li><Link href="/projects">Our Projects</Link></li>
+          <li><Link href="/constitution">Constitution</Link></li>
+          <li><Link href="/contact">Contact Us</Link></li>
           </ul>
         </nav>
       </div>
