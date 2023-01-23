@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import Image from 'next/image'
 import React from 'react'
 import anna from '../../public/imgs/annadristi.jpeg'
@@ -5,6 +6,9 @@ import anna from '../../public/imgs/annadristi.jpeg'
 const projects = () => {
   return (
     <div className="relative w-full h-full md:h-[100vh] bg-gradient-to-t from-lime-500 via-transparent">
+      <Head>
+        <title>Projects</title>
+      </Head>
       <div className="invisible md:visible absolute w-full h-full opacity-0 md:opacity-80 lg:opacity-100 transition-opacity duration-700">
         <span className="absolute flex flex-row h-[130px] w-[96%] mt-16 right-0 bg-lime-600"></span>
         <span className="absolute h-[350px] w-[30%] mt-16 right-0 bg-lime-600"></span>

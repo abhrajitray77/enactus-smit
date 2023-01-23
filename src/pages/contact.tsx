@@ -1,8 +1,13 @@
+import Head from 'next/head'
 import React from 'react'
 
 const contact = () => {
   return (
-    <div>contact</div>
+    <div>
+      <Head>
+        <title>Contact Us</title>
+      </Head>
+      </div>
   )
 }
 
