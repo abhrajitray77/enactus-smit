@@ -43,13 +43,14 @@ const Header = () => {
           <li><Link href="/contact">Contact Us</Link></li>
         </ul>
       </div>
+      {/*
       <div className=" hidden md:inline md:absolute md:py-4 md:px-4 md:inset-y-0 md:right-0
       ">
         <button className=" bg-yellow-400 rounded-md p-3 text-sm font-medium text-slate-800
         hover:text-black hover:shadow-[0_1px_4px_4px] hover:shadow-yellow-300 hover:transition hover:duration-[.3s]">
           Donate Now</button>
       </div>
-      
+  */}
       {/*navigation panel*/}
 
       <div className="flex absolute inset-y-0 right-0 top-0 md:hidden">
