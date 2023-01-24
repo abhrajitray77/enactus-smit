@@ -10,7 +10,7 @@ const Footer = () => {
                     © 2023 Enactus-SMIT
                 <span className="ml-9"></span>All Rights Reserved.
                 </span>
-                <h2 className="mt-2 mb-2 whitespace-nowrap text-gray-400 text-md">Made with ♥ by Abhrajit Ray and Kuldeep Borah </h2>
+                <h2 className="mt-2 mb-2 whitespace-nowrap text-gray-400 text-md">Made with ♥ by Abhrajit Ray</h2>
             </div>
             <ul className="flex w-full md:justify-end space-x-7 mt-3 text-sm text-gray-400 sm:mt-0">
                 <li><Link href="/projects">Our Projects</Link></li>
