@@ -41,6 +41,7 @@ const Header = () => {
           <li><Link href="/projects">Our Projects</Link></li>
           <li><Link href="/constitution">Constitution</Link></li>
           <li><Link href="/contact">Contact Us</Link></li>
+          <li><Link href="/partners">Collaborations</Link></li>
         </ul>
       </div>
       {/*
@@ -61,6 +62,7 @@ const Header = () => {
           <li><Link href="/projects">Our Projects</Link></li>
           <li><Link href="/constitution">Constitution</Link></li>
           <li><Link href="/contact">Contact Us</Link></li>
+          <li><Link href="/partners">Collaborations</Link></li>
           </ul>
         </nav>
       </div>
